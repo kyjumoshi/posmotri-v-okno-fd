@@ -16,6 +16,9 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -50,12 +53,6 @@ ol {
   background-color: #d9d9d9;
 }
 
-.page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -63,8 +60,9 @@ ol {
   gap: 30px;
 }
 
-.result{
-  margin-left: 25px;
+.result {
+  margin-left: 85px;
+  margin-bottom: 16px;
 }
 
 .result__video-container {
@@ -76,7 +74,7 @@ ol {
 .result__video {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .search-form {
@@ -91,7 +89,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -103,13 +101,14 @@ ol {
 
 .search-form__label {
   display: flex;
-  flex-direction: row;
   width: fit-content;
+  flex-direction: row;
+  align-items: center;
 }
 
 .search-form__label-text {
   appearance: none;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -123,7 +122,7 @@ ol {
 }
 
 .search-form__textfield {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -132,14 +131,14 @@ ol {
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  background: #1B1919;
+  background: transparent;
   width: 255px;
   appearance: none;
   padding: 2.5px;
 }
 
 .search-form__textfield:focus-visible {
-  outline: 1px solid #fff; 
+  outline: 1px solid #fff;
   outline-offset: 2px;
 }
 
@@ -153,18 +152,18 @@ ol {
 
 .search-form__pseudo-checkbox {
   position: relative;
-  width: 19px; 
-  height: 19px; 
+  width: 19px;
+  height: 19px;
   border: 1px solid #fff;
   display: inline-block;
   margin-right: 5px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox::after {
-  content: '';
+  content: "";
   position: absolute;
-  width: 15px;  
+  width: 15px;
   height: 15px;
   background-color: #fff;
   display: none;
@@ -185,7 +184,7 @@ ol {
 }
 
 .button {
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
@@ -222,7 +221,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 70.5px;
@@ -231,7 +230,7 @@ ol {
   text-decoration-skip-ink: none;
   color: #fff;
   text-transform: uppercase;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 .content__accent {
@@ -243,6 +242,7 @@ ol {
   overflow: auto;
   margin-right: 80px;
   position: relative;
+  margin-bottom: 11px;
 }
 
 .content__list {
@@ -251,16 +251,13 @@ ol {
   justify-content: space-between;
   flex-direction: column;
   gap: 30px;
-  margin-top: 26px;
-}
-
-.preloader {
-  position: absolute;
+  margin-top: 20px;
 }
 
 .content__list-item {
   padding: 0 3px 0 3px;
 }
+
 .content__card-link {
   text-decoration: none;
   color: #fff;
@@ -273,23 +270,24 @@ ol {
   cursor: pointer;
 }
 
-.content__video-card:hover {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
-.content__video-card:focus-visible {
+.content__card-link:focus-visible {
   outline: 1px solid #fff;
 }
 
-.content__video-card:active {
+.content__card-link:active {
   background: #545050;
 }
 
 .content__video-card-description-container {
   flex-grow: 1;
 }
+
 .content__video-card-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
@@ -304,7 +302,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
@@ -325,4 +323,3 @@ ol {
   height: 34px;
   margin-top: 30px;
 }
-
