@@ -19,6 +19,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 31px;
 }
 
 h1,
@@ -61,8 +62,7 @@ ol {
 }
 
 .result {
-  margin-left: 80px;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 
 .result__video-container {
@@ -81,7 +81,6 @@ ol {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 12px;
 }
 
 .search-form__fieldset {
@@ -230,7 +229,7 @@ ol {
   text-decoration-skip-ink: none;
   color: #fff;
   text-transform: uppercase;
-  margin-top: 32px;
+  margin-top: 22px;
 }
 
 .content__accent {
@@ -238,9 +237,9 @@ ol {
 }
 
 .content__list-container {
-  height: 335px;
+  height: 315px;
   overflow: auto;
-  margin-right: 80px;
+  margin-right: 31px;
   position: relative;
   margin-bottom: 11px;
 }
