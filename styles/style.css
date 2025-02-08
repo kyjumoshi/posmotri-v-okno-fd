@@ -62,7 +62,7 @@ ol {
 }
 
 .result {
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 }
 
 .result__video-container {
@@ -229,7 +229,7 @@ ol {
   text-decoration-skip-ink: none;
   color: #fff;
   text-transform: uppercase;
-  margin-top: 22px;
+  margin-top: 26px;
 }
 
 .content__accent {
@@ -237,7 +237,7 @@ ol {
 }
 
 .content__list-container {
-  height: 315px;
+  height: 317px;
   overflow: auto;
   margin-right: 31px;
   position: relative;
